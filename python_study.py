@@ -72,7 +72,8 @@ if __name__ == '__main__' :
     for title,temp_url in data.items() :
 #        print(title,end='')
         data[title] = get_real_url(temp_url,headers)
-    print(data)
+    write_to_datebase(data)
+#    print(data)
 #    no=1
 #    print('>>>>>>>>>>>>第{0}页<<<<<<<<<<<\n{1}'.format(no,data))
     import time 
@@ -81,4 +82,6 @@ if __name__ == '__main__' :
         next_url,data = get_and_parse(url_base+next_url,headers)
 #        print('>>>>>>>>>>>>>>第{0}页<<<<<<<<<<<\n{1}'.format(no,data))
         time.sleep(1)
-#
+	for title,temp_url in data.items() :
+	    data[title] = get_real_url
+	write_to_database(data)
