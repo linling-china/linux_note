@@ -69,12 +69,27 @@ if __name__ == '__main__' :
     next_url,data = get_and_parse(url_base+'/ns?',query_string)
 #    print(next_url)
     for title,temp_url in data.items() :
+<<<<<<< HEAD
         data[title] = get_real_url(temp_url)
     print(data)
+=======
+#        print(title,end='')
+        data[title] = get_real_url(temp_url,headers)
+    write_to_datebase(data)
+#    print(data)
+#    no=1
+#    print('>>>>>>>>>>>>第{0}页<<<<<<<<<<<\n{1}'.format(no,data))
+>>>>>>> 2a19e05e3bb54c2f9efb8ed533d31bcd82fc0630
     import time 
     while next_url:
         next_url,data = get_and_parse(url_base+next_url)
         time.sleep(1)
+<<<<<<< HEAD
         for title,temp_url in data.items() :
             data[title] = get_real_url(temp_url)
         print(data)
+=======
+	for title,temp_url in data.items() :
+	    data[title] = get_real_url
+	write_to_database(data)
+>>>>>>> 2a19e05e3bb54c2f9efb8ed533d31bcd82fc0630
