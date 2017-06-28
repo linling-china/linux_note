@@ -9,6 +9,7 @@ cp ../yum.repos.d.bak/* .
 ```  
 rm Centos-Base.repo  
 wget 或者 curl -O 下载163的yum配置Centos7-Base-163.repo文件  
+yum clean all #清一下缓存
 ```  
 
 ## 安装yum扩展源epel(含zabbix,nginx等不在基础园中的软件包)  
@@ -27,9 +28,8 @@ yum reinstall 包名 --downloadonly --downloaddir==/tmp/ #在已经安装了包�
 ### 下载源码包  
 cd /usr/local/src #指定源码包目录  
 wget http://download_url  
-> r.aminglinux.com 铭哥的码市（内含源码包下载地址）  
 解包，查看INSTALL README 两个说明文件  
-
+> r.aminglinux.com 铭哥的码市（内含源码包下载地址）  
 
 ### 源码包安装步骤  
 1）./configure --prefix=/usr/locale/apache2  
