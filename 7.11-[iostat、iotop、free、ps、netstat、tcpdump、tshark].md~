@@ -105,7 +105,7 @@ TIME_WAIT	305
 
 - 拓展  
 
-> TCP : http://www.doc88.com/p-9913773324388.html
+> http://www.doc88.com/p-9913773324388.html
 
 TCP通信过程中的各个状态：  
 1，LISTEN:服务端打开一个socket进行监听，监听远端TCP端口的连接请求。  
@@ -136,7 +136,7 @@ port 22 and host 1.1.1.1 :指定端口和主机IP
 ```
   
 ## tshark  
-> tshark : http://www.aminglinux.com/bbs/thread-995-1-1.html
+> http://www.aminglinux.com/bbs/thread-995-1-1.html
 
 查看指定网卡上的80端口，正在访问的IP，具体访问什么资源  
 - 安装：  
