@@ -136,9 +136,9 @@ port 22 and host 1.1.1.1 :指定端口和主机IP
   
 ## tshark  
 查看指定网卡上的80端口，正在访问的IP，具体访问什么资源  
-- 安装：  
+1. 安装：
 yum install -y wireshark  
-- 用法：  
+2. 用法：  
 ```  
 tshark -n -t a -R http.request -T fields -e "frame.time" -e "ip.src" -e "http.host" =e "http.request.method" -e "http.request.uri"  
 ```  
